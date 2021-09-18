@@ -16,11 +16,11 @@ $colors: (#d13447, #ffbf00, #263672);
 
 @for $i from 0 through 255 {
   $width: random(8);
-  $length: random(10000100);
+  $length: random(100);
 
   .confetti-#{$i} {
     width: #{$width}px;
-    height: #{$width*0.8}px;
+    height: #{$width*7.8}px;
     background-color: nth($colors, random(3));
     top: -10%;
     left: unquote($length+"%");
